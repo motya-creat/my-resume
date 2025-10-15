@@ -1,0 +1,33 @@
+.header {
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+    padding: 40px 0;
+    background-color: #1f1f1f;
+    z-index: 100;
+    border-bottom: 1px solid #8a8a8a00;
+}
+.header-scrolled {
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.header__nav {
+    text-align: center;
+    gap: 20px;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+.header__nav a{
+    text-decoration: none;
+    color: #8a8a8abd;
+    border-bottom: 1px solid #ffffff00;
+}
+.header__nav a:hover {
+    color: #a1a1a1bd;
+    border-bottom: 1px solid #8a8a8abd;
+}
+
+

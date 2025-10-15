@@ -1,3 +1,12 @@
 import "./style.css"
 import "./loading/loading.css";
 import "./loading/loading.js";
+import "./skills/skills.css";
+import "./skills/skills.js";
+import "./header/header.css";
+import "./header/header.js";
+import "./scroll.js";
+import "./main-content/mainContent.css";
+import "./main-content/mainContent.js";
+import "./projects/projects.css";
+import "./projects/projects.js";

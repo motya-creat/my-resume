@@ -1,0 +1,113 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC; */
+    /* padding: 100px 0; */
+    width: 100%;
+}
+
+.skills p {
+    color: #ebe6e6;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.skills__navigation {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 20px 0;
+}
+
+.skills__navigation button {
+    margin: 0 10px 0 0;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    gap: 20px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.skills__navigation button.active,
+.skills__navigation button:hover {
+    background-color: #555;
+    color: white;
+}
+
+.skills__items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10px 10px 0;
+    gap: 5px;
+    padding: 10px 20px;
+    font-family: monospace;
+    background-color: #383838;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 16px;
+    user-select: none;
+}
+
+.skill-item:hover {
+    background-color: #383838bd;
+    transition: .3s;
+}
+
+.skill-img {
+    width: 25px;
+    height: 25px;
+}
+
+.html {
+    color: #F54927;
+}
+
+.figma {
+    color: #B197FC;
+}
+
+.js {
+    color: #FFD43B;
+}
+
+.css {
+    color: #74C0FC;
+}
+
+.git {
+    color: #F1502F;
+}
+
+.npm {
+    color: #CB3837;
+}
+
+.sass {
+    color: #CD6799;
+}
+
+.vsc {
+    color: #007ACC;
+}
+
+.node {
+    color: #68A063;
+}
+
+.react {
+    color: #61DBFB;
+}

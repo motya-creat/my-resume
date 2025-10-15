@@ -34,6 +34,10 @@
 .dot:nth-child(3) {
     animation-delay: .4s;
 }
+.text-loading {
+    font-weight: 600;
+    margin: 10px 0 0 0;
+}
 
 @keyframes bounce {
     to {

@@ -5,11 +5,134 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="#" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <title>My resume</title>
 </head>
 
 <body>
   <div id="app" hidden>
+    <header class="header d-flex">
+      <div class="wrap">
+        <div class="header__logo d-flex">
+          <!-- <div class="header__logo-item">
+            <h1>Motya</h1>
+          </div> -->
+        </div>
+        <div class="header__nav d-flex">
+          <a href="">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="">Contacts</a>
+        </div>
+      </div>
+    </header>
+    <div class="main__content d-flex">
+      <div class="content__header d-flex">
+        <div class="content__header-left-item d-flex">
+          <h1 class="header-left__name">MyResume.js</h1>
+          <!-- <h1 class="header-left__title text-writing"><span style="color: aqua;">print</span>(<span
+              style="color: rgb(40, 153, 40);">"Hello, I`m Matvey"</span>)</h1> -->
+          <h1 class="header-left__title ">
+            <code>
+              function sayHi(name){<br> <br>ㅤㅤconsole.log(`Hello, I am ${name}`)<br> <br>}</code>
+          </h1>
+          <h1 class="header-left__title">
+            <code><br>sayHi('Matvey')</code>
+          </h1>
+          <h1 class="header-left__title text-writing">
+            <code><br> > Hello, i`m Matvey</code>
+          </h1>
+          <div class="header-left__title__button d-flex">
+            <form action="#projects">
+              <button class="title__button d-flex">Go to Projects</button>
+            </form>
+          </div>
+        </div>
+        <div class="content__header-right-item d-flex">
+          <img src="./src/images/person.png" alt="head-logo">
+        </div>
+      </div>
+      <div class="skills" id="skills">
+        <div class="skills__title">
+          <p>My skills</p>
+        </div>
+        <div class="skills__navigation">
+          <button class="skill-btn" data-filter="all">All</button>
+          <button class="skill-btn" data-filter="frontend">Frontend</button>
+          <button class="skill-btn" data-filter="tools">Tools</button>
+        </div>
+        <div class="skills__items"></div>
+      </div>
+      <div class="projects d-flex" id="projects">
+        <div class="projects__title d-flex">
+          <p>My Projects</p>
+        </div>
+        <div class="project__content d-flex">
+          <div class="project__item-first d-flex">
+            <div class="item-first__content d-flex">
+              <h1>Aperture</h1>
+              <p>Описание</p>
+              <!-- <span class="type-tag"><img src="./src/images/icons/skills/html5.svg" alt="HTML5">HTML5</span> -->
+              <div class="first__content__skills d-flex">
+                <div class="project-skill html">
+                  <img src="../src/images/icons/skills/html5.svg" class="skill-img"> HTML5
+                </div>
+                <div class="project-skill css">
+                  <img src="../src/images/icons/skills/css.svg" class="skill-img"> CSS
+                </div>
+                <div class="project-skill sass">
+                  <img src="../src/images/icons/skills/sass.svg" class="skill-img"> Sass
+                </div>
+              </div>
+            </div>
+            <div class="item-first__video d-flex">
+              
+            </div>
+          </div>
+
+          <!-- <div class="card-item d-flex">
+            <div class="card-item__logo d-flex">
+              <img src="../images/cards/" alt="Проект Aperture">
+            </div>
+            <div class="card-item__type d-flex">
+              <span class="type-tag js">JavaScript</span>
+              <span class="type-tag html">HTML5</span>
+              <span class="type-tag sass">Sass</span>
+            </div>
+            <div class="card-item__content d-flex">
+              <h3>Проект Aperture</h3>
+              <p>Aperture</p>
+            </div>
+
+            <div class="card-item d-flex">
+              <div class="card-item__logo d-flex">
+                <img src="../images/cards/" alt="Проект Aperture">
+              </div>
+              <div class="card-item__type d-flex">
+                <span class="type-tag">JavaScript</span><span class="type-tag">HTML5</span><span
+                  class="type-tag">Sass</span>
+              </div>
+              <div class="card-item__content d-flex">
+                <h3>Проект Aperture</h3>
+                <p>Aperture</p>
+              </div>
+
+              <div class="card-item d-flex">
+                <div class="card-item__logo d-flex">
+                  <img src="../images/cards/" alt="Проект Aperture">
+                </div>
+                <div class="card-item__type d-flex">
+                  <span class="type-tag">JavaScript</span><span class="type-tag">HTML5</span><span
+                    class="type-tag">Sass</span>
+                </div>
+                <div class="card-item__content d-flex">
+                  <h3>Проект Aperture</h3>
+                  <p>Aperture</p>
+                </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <div id="loading-page">
     <div class="loading-dots">
@@ -17,6 +140,7 @@
       <div class="dot"></div>
       <div class="dot"></div>
     </div>
+    <span class="text-loading">loading</span>
   </div>
   <script type="module" src="/src/main.js"></script>
 </body>
